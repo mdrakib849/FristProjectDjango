@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home_Page</title>
-</head>
-<body>
+{% extends "home/base.html" %}
+{% block content %}
 
-<h1> HOME PAGE </h1>
+{% for blog in blog_post%}
+<h1>{{blog.title}}</h1>
+<h2>{{blog.content}}</h2>
+<h3>{{blog.author}}</h3>
+<h4>{{blog.post_create_data}}</h4>
 
-</body>
-</html>
+{% endfor %}
+{% endblock %}
