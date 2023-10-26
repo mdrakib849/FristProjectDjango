@@ -1,16 +1,16 @@
 {% extends "home/base.html" %}
 {% block content %}
 
-{% for blog in blog_post%}
+{% for Post in Posts%}
 
 <article class="media content-section">
     <div class="media-body">
         <div class="article-metadata">
-            <a class="mr-2" href="#">{{ blog.title }}</a>
-            <small class="text-muted">{{ blog.content }}</small>
+            <a class="mr-2" href="#">{{ Post.author }}</a>
         </div>
-        <h2><a class="article-title" href="#">{{ blog.author }}</a></h2>
-        <p class="article-content">{{ blog.post_create_data }}</p>
+        <h2><a class="article-title" href="#">{{ Post.title }}</a></h2>
+        <h6><a class="article-title" href="#">{{ Post.content }}</a></h6>
+        <p class="article-content">{{ Post.date_post |date:"F d,Y" }}</p>
     </div>
 </article>
 
