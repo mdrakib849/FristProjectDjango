@@ -9,3 +9,4 @@ def homepage(request):
 
 def about(request):
     return render(request, 'home/about.html', {"title": "About page"})
+
