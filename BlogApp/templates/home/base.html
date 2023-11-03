@@ -25,6 +25,7 @@
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <div class="navbar-nav mr-auto">
                     <a class="nav-item nav-link" href="{% url 'home page'%}">Home</a>
@@ -70,6 +71,7 @@
                     <li class="list-group-item list-group-item-light">Announcements</li>
                     <li class="list-group-item list-group-item-light">Calendars</li>
                     <li class="list-group-item list-group-item-light">etc</li>
+                    <button type="button"><a href="{% url 'post create' %}">Create New Post!</a></button>
                 </ul>
                 </p>
             </div>
